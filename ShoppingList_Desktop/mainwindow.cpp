@@ -6,7 +6,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setAddRow();
+    addbutton->setText("Add");
+    setAddRow();
 }
 
 MainWindow::~MainWindow()
