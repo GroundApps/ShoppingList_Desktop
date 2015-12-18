@@ -2,9 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTextEdit>
-#include <QSpinBox>
 #include <QPushButton>
+#include <QLabel>
+#include <QCheckBox>
+#include <QMessageBox>
 
 namespace Ui {
 class MainWindow;
@@ -18,12 +19,12 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_actionAbout_Qt_triggered();
+
 private:
     Ui::MainWindow *ui;
-    void setAddRow();
-    QTextEdit *itemedit = new QTextEdit();
-    QSpinBox *countedit = new QSpinBox();
-    QPushButton *addbutton = new QPushButton();
+    void setExampleRow();
 };
 
 #endif // MAINWINDOW_H
