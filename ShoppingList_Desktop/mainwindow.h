@@ -6,6 +6,8 @@
 #include <QLabel>
 #include <QCheckBox>
 #include <QMessageBox>
+#include <QWidget>
+#include <QVBoxLayout>
 
 namespace Ui {
 class MainWindow;
